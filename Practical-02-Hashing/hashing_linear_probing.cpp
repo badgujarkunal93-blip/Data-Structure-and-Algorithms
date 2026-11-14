@@ -1,0 +1,4 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){int n,c,k;cout<<"Table size: ";cin>>n;if(n<=0)return 0;vector<int>t(n);vector<bool>used(n,false);do{cout<<"\n1.Insert 2.Search 3.Display 0.Exit\nChoice: ";cin>>c;if(c==1){cout<<"Key: ";cin>>k;int h=((k%n)+n)%n;bool done=false;for(int i=0;i<n;i++){int j=(h+i)%n;if(!used[j]){t[j]=k;used[j]=true;cout<<"Inserted at "<<j<<"\n";done=true;break;}}if(!done)cout<<"Table full\n";}else if(c==2){cout<<"Key: ";cin>>k;int h=((k%n)+n)%n;bool found=false;for(int i=0;i<n;i++){int j=(h+i)%n;if(!used[j])break;if(t[j]==k){cout<<"Found at "<<j<<"\n";found=true;break;}}if(!found)cout<<"Not found\n";}else if(c==3){for(int i=0;i<n;i++)cout<<i<<": "<<(used[i]?to_string(t[i]):"Empty")<<"\n";}}while(c!=0);}
