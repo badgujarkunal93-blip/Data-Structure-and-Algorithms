@@ -1,0 +1,5 @@
+#include <iostream>
+#include <string>
+using namespace std;
+struct Node{string name,phone;int minutes;Node*next;};
+int main(){Node*head=nullptr;int c;do{cout<<"\nCALL LOG - SINGLY LINKED LIST\n1.Add 2.Display 3.Search 4.Delete 0.Exit\nChoice: ";cin>>c;if(c==1){Node*n=new Node;cout<<"Name: ";cin>>ws;getline(cin,n->name);cout<<"Phone: ";getline(cin,n->phone);cout<<"Duration (minutes): ";cin>>n->minutes;n->next=head;head=n;}else if(c==2){for(Node*p=head;p;p=p->next)cout<<p->name<<" | "<<p->phone<<" | "<<p->minutes<<" min\n";if(!head)cout<<"Call log empty\n";}else if(c==3||c==4){string phone;cout<<"Phone: ";cin>>phone;Node*p=head,*prev=nullptr;while(p&&p->phone!=phone){prev=p;p=p->next;}if(!p)cout<<"Not found\n";else if(c==3)cout<<p->name<<" | "<<p->minutes<<" min\n";else{if(prev)prev->next=p->next;else head=p->next;delete p;cout<<"Deleted\n";}}}while(c!=0);while(head){Node*t=head;head=head->next;delete t;}}
