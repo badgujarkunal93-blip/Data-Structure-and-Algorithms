@@ -1,0 +1,5 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+class Queue{stack<int>in,out;void transfer(){if(out.empty())while(!in.empty()){out.push(in.top());in.pop();}}public:void enqueue(int x){in.push(x);cout<<"Inserted "<<x<<'\n';}void dequeue(){transfer();if(out.empty())cout<<"Queue empty\n";else{cout<<"Deleted "<<out.top()<<'\n';out.pop();}}void peek(){transfer();if(out.empty())cout<<"Queue empty\n";else cout<<"Front: "<<out.top()<<'\n';}void display(){stack<int>a=out,b=in,tmp;while(!b.empty()){tmp.push(b.top());b.pop();}while(!tmp.empty()){a.push(tmp.top());tmp.pop();}while(!a.empty()){cout<<a.top()<<' ';a.pop();}cout<<'\n';}};
+int main(){Queue q;int c,x;do{cout<<"\n1 Enqueue\n2 Dequeue\n3 Peek\n4 Display\n0 Exit\n";cin>>c;if(c==1){cin>>x;q.enqueue(x);}else if(c==2)q.dequeue();else if(c==3)q.peek();else if(c==4)q.display();}while(c);}
