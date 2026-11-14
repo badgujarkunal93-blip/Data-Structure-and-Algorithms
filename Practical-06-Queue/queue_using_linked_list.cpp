@@ -1,0 +1,4 @@
+#include <iostream>
+using namespace std;
+struct Node{int data;Node*next;Node(int x):data(x),next(nullptr){}};
+int main(){Node*f=nullptr,*r=nullptr;int c,x;do{cout<<"\nQUEUE USING LINKED LIST\n1.Enqueue 2.Dequeue 3.Peek 4.Display 0.Exit\nChoice: ";cin>>c;if(c==1){cout<<"Value: ";cin>>x;Node*n=new Node(x);if(!r)f=r=n;else{r->next=n;r=n;}}else if(c==2){if(!f)cout<<"Queue empty\n";else{Node*t=f;cout<<"Dequeued "<<t->data<<"\n";f=f->next;if(!f)r=nullptr;delete t;}}else if(c==3){if(f)cout<<f->data<<"\n";else cout<<"Queue empty\n";}else if(c==4){for(Node*p=f;p;p=p->next)cout<<p->data<<" ";cout<<"\n";}}while(c!=0);while(f){Node*t=f;f=f->next;delete t;}}
