@@ -12,9 +12,9 @@ C++ practical programs based on the two PDFs supplied for this repository.
 | 01 – Arrays Operation | [Student Mark Analysis](Practical-01-Arrays/student_mark_analysis.cpp) |
 | 02 – Hashing Operation | [Parking Lot using Linear Probing](Practical-02-Hashing/parking_lot_linear_probing.cpp) |
 | 03 – Search and Sorting | [Friends Phone Book using Sentinel Search](Practical-03-Search-and-Sorting/friends_phonebook_sentinel_search.cpp) |
-| 04 – Linked List | [Call Log – Singly Linked List](Practical-04-Linked-List/call_log_singly_linked_list.cpp) · [Train Reservation – Doubly Linked List](Practical-04-Linked-List/train_reservation_doubly_linked_list.cpp) · [Music Playlist – Circular Linked List](Practical-04-Linked-List/music_playlist_circular_linked_list.cpp) |
+| 04 – Linked List | **A.** [Call Log – Singly Linked List](Practical-04-Linked-List/call_log_singly_linked_list.cpp)<br>**B.** [Train Reservation – Doubly Linked List](Practical-04-Linked-List/train_reservation_doubly_linked_list.cpp)<br>**C.** [Music Playlist – Circular Linked List](Practical-04-Linked-List/music_playlist_circular_linked_list.cpp) |
 | 05 – Stack | [Stack using Two Queues](Practical-05-Stack/stack_using_two_queues.cpp) |
-| 06 – Queue | [Queue using Linked List](Practical-06-Queue/queue_using_linked_list.cpp) · [Queue using Two Stacks](Practical-06-Queue/queue_using_two_stacks.cpp) |
+| 06 – Queue | **A.** [Queue using Linked List](Practical-06-Queue/queue_using_linked_list.cpp)<br>**B.** [Queue using Two Stacks](Practical-06-Queue/queue_using_two_stacks.cpp) |
 | PDF Practical 07 | [Task Scheduler using Deque](Practical-07-Task-Scheduler/task_scheduler_deque.cpp) |
 | PDF Practical 08 | [Palindrome using Deque](Practical-08-Deque/palindrome_using_deque.cpp) |
 
